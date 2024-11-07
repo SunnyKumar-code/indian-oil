@@ -1,0 +1,190 @@
+body {
+  background-image: url("IMAGE/background.jpg");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+.container {
+    width: 300px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 50px 150px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  
+  .blue {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px ;
+    margin-bottom: 5px;
+    background-color: rgb(34, 4, 97);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  #nroContainer {
+    margin-top: 10px;
+    display: none;
+  }
+  
+  #nroContainer a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border: 2px solid rgb(34, 4, 97);
+    box-sizing: block;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    color: orange;
+  }
+  #nroContainer a:hover{
+    background: rgb(34, 4, 97);
+    color: white;
+}
+/* dso */
+.orange {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  padding: 10px ;
+  margin-bottom: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#dsoContainer {
+  margin-top: 10px;
+  display: none;
+}
+
+#dsoContainer a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid orange;
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(34, 4, 97);
+}
+#dsoContainer a:hover{
+  background: orange;
+  color: white;
+}
+#dsoContainer {
+  margin-top: 10px;
+  display: none;
+}
+/* pso */
+
+#psoContainer a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid rgb(34, 4, 97);
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: orange;
+}
+#psoContainer a:hover{
+  background: rgb(34, 4, 97);
+  color: white;
+}
+#psoContainer {
+  margin-top: 10px;
+  display: none;
+}
+/* rso */
+#rsoContainer a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid orange;
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(34, 4, 97);
+}
+#rsoContainer a:hover{
+  background: orange;
+  color: white;
+}
+#rsoContainer {
+  margin-top: 10px;
+  display: none;
+}
+/* upso1 */
+#upso1Container a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid rgb(34, 4, 97);
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: orange;
+}
+#upso1Container a:hover{
+  background: rgb(34, 4, 97);
+  color: white;
+}
+#upso1Container {
+  margin-top: 10px;
+  display: none;
+}
+/* upso2 */
+#upso2Container a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid orange;
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(34, 4, 97);
+}
+#upso2Container a:hover{
+  background: orange;
+  color: white;
+}
+#upso2Container {
+  margin-top: 10px;
+  display: none;
+}
+/* lubes */
+#lubesContainer a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border: 2px solid rgb(34, 4, 97);
+  box-sizing: block;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  color: orange;
+}
+#lubesContainer a:hover{
+  background: rgb(34, 4, 97);
+  color: white;
+}
+#lubesContainer {
+  margin-top: 10px;
+  display: none;
+}

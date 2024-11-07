@@ -1,0 +1,140 @@
+/* Reset some default styles */
+body, h1, h2, p, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 100%;
+    width: 70px; /* Adjust this value to set the width of the navigation bar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* styles.css */
+#apprenticeContainer {
+    position: fixed;
+    top: 52px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+}
+
+#employeeContainer {
+    position: fixed;
+    top: 10px; /* Adjust the top position to avoid overlapping */
+    right: 15px; /* Adjust the right position to create separation */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+}
+.counts-box {
+    position: fixed;
+    top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px; /* Add spacing between links */
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:first-child {
+    margin-top: 10px; /* Adjust the margin-top value to set the gap above the home icon */
+}
+
+nav a i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Style for the content container */
+.content-container {
+    margin-left: 70px; /* Adjust this value to set the width of the navigation bar */
+    padding: 20px;
+}
+.search-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Add this to your existing styles.css or in the head section of your HTML */
+.search-results {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.search-results th, .search-results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.search-results th {
+    background-color: #f2f2f2;
+}

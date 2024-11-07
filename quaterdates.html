@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Date Counter</title>
+</head>
+<body>
+    <h1>Quarterly Date Counter</h1>
+
+    <label for="inputDate">Enter a Date:</label>
+    <input type="date" id="inputDate">
+    <button onclick="countQuarterlyDates()">Count Quarterly Dates</button>
+
+    <h2>Quarterly Dates:</h2>
+    <ul id="quarterlyDates"></ul>
+
+    <script>
+        function countQuarterlyDates() {
+            const inputDate = new Date(document.getElementById("inputDate").value);
+            const quarterlyDatesList = document.getElementById("quarterlyDates");
+
+            // Clear previous results
+            quarterlyDatesList.innerHTML = "";
+
+            for (let i = 0; i < 4; i++) {
+                const quarterStartDate = new Date(inputDate);
+                quarterStartDate.setMonth(quarterStartDate.getMonth() + (i * 3));
+
+                const quarterEndDate = new Date(quarterStartDate);
+                quarterEndDate.setMonth(quarterEndDate.getMonth() + 3);
+
+                const listItem = document.createElement("li");
+                listItem.textContent = `Quarter ${i + 1}: ${formatDate(quarterStartDate)} to ${formatDate(quarterEndDate)}`;
+                quarterlyDatesList.appendChild(listItem);
+            }
+        }
+
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString(undefined, options);
+        }
+    </script>
+</body>
+</html>

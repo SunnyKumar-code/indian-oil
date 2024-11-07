@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Oil Apprentice Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("IMAGE/background.jpg") right top,
+                url("IMAGE/background.jpg") left bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container1 {
+            margin-bottom: auto;
+            width: 100%;
+            height: 13vh;
+            background-color: rgba(253, 253, 253, 0.959);
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }   
+
+        .container {
+           
+            margin-right: 454px;
+            margin-top: 40%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fffafac5;
+            font-size: 60px;
+            margin-bottom: -41px;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover {
+            color: #ff5500;
+        }
+
+        h2 {
+            color: #fffafac5;
+            font-size: 40px;
+            margin-bottom: 63px;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #ff5500;
+        }
+
+        .login-button {
+            display: inline-block;
+            padding: 11px 38px;
+            background-color: #1100cc;
+            color: #fff;
+            border: none;
+            border-radius: 26px;
+            cursor: pointer;
+            font-size: 35px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #000baa;
+        }
+
+        .adminlogin-button {
+            bottom: 90%;
+            right: 5px;
+            position: absolute;            
+            display: inline-block;
+            padding: 8px 25px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 26px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="IMAGE/logo.gif" alt="Indian Oil Logo">
+        <a href="adminlogin.php"><button class="adminlogin-button">Admin Login </button></a>
+   
+    <div class="container">
+        <h1>Welcome to Indian Oil </h1>
+        <h2>Apprentice Portal</h2>
+        <a href="login.php"><button class="login-button">Login  </button></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    background-image: url("../IMAGE/background.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+}
+
+h2 {
+    text-align: center;
+    color: #190c65;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    color: black;
+    background-color: whitesmoke;
+}
+
+input[type="submit"] {
+    background-color: #1004b3;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* Style for the date grid */
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 7 columns for the days of the week */
+    gap: 10px;
+    /* Adjust the gap between checkboxes */
+}
+
+.date-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    /* Increase padding for better spacing */
+    cursor: pointer;
+    background-color: #fff;
+    /* Background color for date labels */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.empty-cell {
+    visibility: hidden;
+    /* Hide empty cells before the start of the month */
+}
+
+.date-label:hover {
+    background-color: #f0f0f0;
+    /* Background color on hover */
+}
+
+/* Style for selected date labels */
+.date-label input[type="checkbox"]:checked+label {
+    background-color: #007BFF;
+    /* Background color for selected dates */
+    color: #fff;
+    /* Text color for selected dates */
+    border-color: #007BFF;
+    /* Border color for selected dates */
+}
+
+/* Style for selected date labels on hover */
+.date-label input[type="checkbox"]:checked+label:hover {
+    background-color: #0056b3;
+    /* Background color for selected dates on hover */
+}
+
+.day-labels {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+}
+
+.day-label {
+    text-align: center;
+}
+
+.calendar-controls {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.calendar-controls label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.calendar-controls select,
+.calendar-controls input[type="number"] {
+
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.calendar-controls button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.calendar-controls button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-controls-container {
+    max-width: 1800px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Add some space between the calendar controls and the form */
+}
+
+.weekend {
+    background-color: #FFCCCC;
+    /* Background color for Saturday and Sunday */
+    color: #FF0000;
+    /* Text color for Saturday and Sunday */
+    border-color: #FF0000;
+    /* Border color for Saturday and Sunday */
+}
